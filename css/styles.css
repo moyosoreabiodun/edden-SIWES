@@ -1,0 +1,172 @@
+/* General */
+:root {
+    scroll-behavior: smooth;
+  }
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Elsie', cursive;
+}
+p{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Navbar */
+.navbar{
+    background-color: #fff;
+    margin-bottom: 16px;
+}
+.navbar .nav-item{
+    padding: 0 16px;
+}
+.navbar .logo{
+    max-height: 28px;
+}
+.dropdown-menu{
+    border: none;
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Home */
+#home .home-text{
+    background-color: #464E2E;
+    color: #fff;
+    text-align: left;
+    padding-top: 15.3125rem;
+    padding-bottom: 15.3125rem;
+}
+#home .you{
+    color: #ACB992;
+}
+.home-image-div{
+    background: url(../images/eddenhomeimage.jpg) no-repeat center;
+    background-size: cover;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+}
+.text{
+    padding-left: 3rem;
+}
+.home-image{
+    width: 70%;
+    height:70%;
+    display: block;
+    margin: auto;
+    border-radius: 20%;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+}
+
+/* About You, About Edden */
+.about-you .about-you-image-div{
+    background-color: #ACB992;
+    padding-top: 5%;
+}
+.about-you .about-you-image{
+    width: 36.75rem;
+    height: 27.5rem;
+    padding: 0 0 10% 5%;
+}
+.about-you-button{
+    color: #fff;
+    background-color: #464E2E;
+}
+.about-edden .about-edden-image-div{
+    background-color: #464E2E;
+    padding-top: 5%;
+}
+.about-edden .about-edden-image{
+    width: 36.75rem;
+    height: 27.5rem;
+    padding: 0 0 10% 5%;
+}
+
+/* Newsletter */
+.newsletter{
+    text-align: center;
+    padding: 7% 15%;
+    background-color: #ACB992;
+}
+.newsletter .subscription-button{
+    margin: 4% auto;
+}
+.newsletter .subscription-button form input[type=email] {
+    border: 0;
+    padding: 0.5rem;
+    width: calc(100% - 8.75rem);
+  }
+.newsletter .subscription-button form input[type=submit]{
+    background: #464E2E;
+    color: #fff;
+    margin: 4% auto;
+    padding: 0.5rem 1.875rem;
+    border-radius: 0.25rem;
+}
+
+/* Contact */
+.contact{
+    background: white url(../images/eddenfooterbackground\ \(800\ ×\ 200px\).png) no-repeat right top;
+    background-size: contain;
+    padding: 7%;
+    text-align: center;
+    color: #fff;
+}
+.social-icon{
+    margin: 4% 2% 2%;
+}
+.contact a .social-icon{
+    color: #E9E5D6;
+}
+.contact a:hover .social-icon{
+    color: #ACB992;
+}
+
+/* Shop */
+.shop-heading{
+    margin-top: 6rem;
+}
+.card-odd{
+    background-color: #464E2E;
+    color: #fff;
+}
+
+/* Cart */
+.cart{
+    margin-top: 6rem;
+}
+.trash-icon{
+    color: #000;
+}
+.trash-icon:hover{
+    color: #464E2E;
+}
+.form-heading, .form-group{
+    text-align: left;
+}
+.billing-details{
+    margin-bottom: 6rem;
+}
+input[type="text"]:focus,
+input[type="number"]:focus,
+.form-control:focus
+{ 
+        border-color: rgba(70, 78, 46, 0.8);
+        box-shadow: 0 1px 1px rgba(70, 78, 46, 0.075) inset, 0 0 8px rgba(70, 78, 46, 0.6);
+        outline: 0 none;
+}
+
+/* Responsiveness */
+@media(max-width: 1028px){
+    #home .home-text{
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+    .about-you-text, .about-edden-text{
+        padding: 7% 15%;
+    }
+    .form-check-inline{
+        display: block;
+        text-align: left;
+    }
+
+}
